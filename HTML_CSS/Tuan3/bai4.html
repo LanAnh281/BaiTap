@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9056832829.js" crossorigin="anonymous"></script>
+    <title>Hoc Web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        header {
+            position: relative;
+            margin: 30px auto;
+            width: 1140px;
+        }
+
+        header #logo {
+            float: left;
+        }
+
+        header .navigation {
+            float: left;
+            padding: 15px 0 0 29px;
+        }
+
+        header .navigation li {
+            display: inline-block;
+            margin-right: 26px;
+        }
+
+        header .navigation li a {
+            text-decoration: none;
+            color: #1f1f1f;
+            font-size: 14px;
+            transition: 0.3s all;
+        }
+
+        header .navigation li.active a,
+        header .navigation li a:hover {
+            color: #00aeef;
+        }
+
+        header .login {
+            color: #00aeef;
+            background: none;
+            float: right;
+            border: 2px solid #efefef;
+            border-radius: 4px;
+            font-size: 14px;
+            padding: 10px;
+            cursor: pointer;
+            transition: 0.3s border-color;
+        }
+
+
+        header .login:hover {
+            border-color: #00aeef;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="logo">
+            <a href="./">
+                <img src="../../Images/logo.png" alt="logo">
+            </a>
+        </h1>
+        <nav class="navigation">
+            <ul>
+                <li class="active"><a href="./">Home</a></li>
+                <li><a href="./">Features</a></li>
+                <li><a href="./">Domain</a></li>
+                <li><a href="./">Hosting</a></li>
+                <li><a href="./">Pricing</a></li>
+                <li><a href="./">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="login">
+            <i class="fa-solid fa-lock"></i>
+            Login
+        </button>
+    </header>
+</body>
+
+</html>

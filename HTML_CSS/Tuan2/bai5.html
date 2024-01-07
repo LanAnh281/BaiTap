@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biểu mẫu thăm dò ý kiến</title>
+</head>
+
+<body>
+  <h1>Phiếu thăm dò ý kiến</h1>
+  <form action="request.php" method="post">
+    <label for="name">Tên đăng nhập:</label>
+    <input type="text" name="name" id="name" /> <br>
+
+    <label for="gender">Giới tính:</label>
+    <input type="radio" name="gender" value="male" id="gender" />Nam
+    <input type="radio" name="gender" value="female" id="gender" />Nữ
+    <br />
+
+    <label for="favorite">Những trang web giải trí bạn thích:</label> <br />
+    <input type="checkbox" name="favorite" id="favorite" />Tiktok
+    <input type="checkbox" name="favorite" id="favorite" />Facebook
+    <input type="checkbox" name="favorite" id="favorite" />Instagarm
+    <input type="checkbox" name="favorite" id="favorite" />Twitter
+
+    <br />
+
+    <input type="submit" value="Gửi đi" />
+    <input type="reset" value="Nhập lại" />
+  </form>
+</body>
+
+</html>
