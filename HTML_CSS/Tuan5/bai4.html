@@ -4,48 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9056832829.js" crossorigin="anonymous"></script>
+
     <title>Hoc Web</title>
-    <style>
-        div {
-            margin: 5px 0;
+    <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
         }
-    </style>
+
+        body {
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .login {
+            background: #18ccca;
+            margin: 30px auto;
+            padding: 20px;
+            width: 1280px;
+            text-align: center;
+        }
+
+        .login h1 {
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            color: #fff
+        }
+
+        .login i {
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            background-color: #fff;
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        .login input {
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            width: 200px;
+        }
+
+        button {
+            background-color: #fff;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            color: #0cb8b6;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s all;
+
+        }
+
+        button:hover {
+            background-color: #0cb8b6;
+            color: #fff;
+        }
+
+        a {
+            color: #e8efef;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s color;
+        }
+
+        a:hover {
+            color: #0cb8b6;
+        }
+    </style> -->
+
 </head>
 
 <body>
-    <div class="help">
-        <h2>Need Help? Sure we are Online!</h2>
-        <p>Etiam dapibus purus porttitor, egestas dui at, scelerisque nulla suspendisse et diam vel justo praesent
-            risus.
-            Nulla ut sagittis lorem nam tempor eros sit amet purus congue.</p>
+    <div class="login">
+        <h1>User login</h1>
         <form action="./">
             <div>
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="Last Name">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Username">
+
             </div>
             <div>
-                <input type="email" placeholder="Your Email">
-                <input type="tel" placeholder="Your phone">
+                <i class="fa-solid fa-lock"></i>
+                <input type="text" placeholder="Password">
             </div>
-            <div>
-                <select name="country">
-                    <option value="">Select Country</option>
-                    <option value="VN">Vietnam</option>
-                    <option value="USA">USA</option>
-                    <option value="UK">England</option>
-                </select>
-                <select name="country">
-                    <option value="">Select Course</option>
-                    <option value="HTML">HTML</option>
-                    <option value="CSS">CSS</option>
-                    <option value="JS">JavaScript</option>
-                </select>
-            </div>
-            <div>
-                <textarea cols="50" rows="10" placeholder="content"></textarea>
-            </div>
-            <input type="submit" value="Submit">
+            <button type="submit">Login</button>
         </form>
+        <a href="./">Forgot password?</a>
     </div>
 </body>
 

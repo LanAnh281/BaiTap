@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoc Web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #a3a3a3;
+            line-height: 1.8;
+        }
+
+        .help {
+            margin: 30px auto;
+            width: 1280px;
+        }
+
+        .help h2 {
+            color: #030303;
+            font-size: 42px;
+            font-weight: normal;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .help .lead-text {
+            line-height: 2;
+            margin-bottom: 36px;
+            text-align: center;
+        }
+
+        .help form {
+            background-color: #ccc;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+
+
+
+        input,
+        select,
+        textarea {
+            border: 1px solid #ecedee;
+            border-radius: 4px;
+            padding: 10px 20px;
+            margin: 0 0 10px;
+            width: 46%;
+        }
+
+        select {
+            width: 49%;
+            color: #a3a3a3
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        button {
+            color: #fff;
+            background-color: #2d3032;
+            border: 1px solide #2d3032;
+            border-radius: 4px;
+            text-align: center;
+            padding: 18px 0;
+            width: 100%;
+            transition: 0.3s background-color;
+        }
+
+        button:hover {
+            background-color: #606162;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="help">
+        <h2>Need Help? Sure we are Online!</h2>
+        <p class="lead-text">Etiam dapibus purus porttitor, egestas dui at, scelerisque nulla suspendisse et diam vel
+            justo praesent
+            risus.
+            Nulla ut sagittis lorem nam tempor eros sit amet purus congue.</p>
+        <form action="./">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+
+            <input type="email" placeholder="Your Email">
+            <input type="tel" placeholder="Your phone">
+            <select name="country">
+                <option value="">Select Country</option>
+                <option value="VN">Vietnam</option>
+                <option value="USA">USA</option>
+                <option value="UK">England</option>
+            </select>
+            <select name="country" class="half-size">
+                <option value="">Select Course</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JS">JavaScript</option>
+            </select>
+            <textarea cols="50" rows="10" placeholder="content"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
