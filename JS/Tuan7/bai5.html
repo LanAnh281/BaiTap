@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoc JavaScript</title>
+</head>
+
+<body>
+    <button onclick="today()">Hôm nay</button>
+    <script>
+        const today = () => {
+            const now = new Date();
+            alert('Hôm nay là ngày ' + now.getDate() + ' tháng ' + (now.getMonth() + 1) + ' năm ' + now.getFullYear());
+            alert(`hôm nay là ngày ${now.getDate()} tháng ${now.getMonth() + 1} năm ${now.getFullYear()}`)
+        }
+    </script>
+</body>
+
+</html>

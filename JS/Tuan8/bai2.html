@@ -1,0 +1,42 @@
+<HTML>
+
+<HEAD>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Đăng nhập vào trang https://quantrimang.com</title>
+</HEAD>
+
+<BODY style="font-family:arial">
+    <H2>Đăng nhập vào trang Quantrimang.com </H2>
+    <HR>
+    <form action="./" method="post" id="loginForm">
+        User Name Password <BR>
+        <input type="text" id=username name="username" size="20">
+        <input type="text" id=password name="password" size="20">
+        <input type="hidden" name="id" value="0">
+        <input type="hidden" name="language" value="en">
+        <input type="submit" value="Đăng nhập - Login">
+
+    </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('loginForm').addEventListener('submit', function (event) {
+                // Ngăn chặn hành vi mặc định của form (gửi yêu cầu đến server)
+                event.preventDefault();
+
+                // Lấy giá trị user name và password từ form
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+
+                // Thực hiện xử lý kiểm tra đăng nhập ở đây (đây chỉ là ví dụ đơn giản)
+                if (username === 'your_username' && password === 'your_password') {
+                    alert('Đăng nhập thành công!');
+                } else {
+                    alert('Đăng nhập thất bại. Vui lòng kiểm tra lại tên đăng nhập và mật khẩu.');
+                }
+            });
+        });
+    </script>
+
+</BODY>
+
+</HTML>

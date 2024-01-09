@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoc JavaScript</title>
+</head>
+
+<body style="font-family:arial;background-color:lavender">
+    <h1>Bạn hãy nhập vào số lượng và giá:</h1>
+    Số lượng: <input name="SoLuong">
+    Đơn giá:<input name="DonGia" onkeyup="thanhTien(event)">
+    <hr>
+    Thành tiền:<input name="ThanhTien" type="text" disabled> VND
+
+    <script>
+        const thanhTien = (event) => {
+            if (event.keyCode == 13) {
+                // Thực hiện tính tiền khi nhấn nút "Enter"
+                const soLuongInput = document.getElementsByName('SoLuong')[0];
+                const donGiaInput = document.getElementsByName('DonGia')[0];
+                const thanhTienInput = document.getElementsByName('ThanhTien')[0];
+                thanhTienInput.value = soLuongInput.value * donGiaInput.value;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

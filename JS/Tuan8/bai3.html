@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #giohang {
+            width: 750px;
+            margin: auto;
+            font-size: 22px;
+            border: 1px solid darkorange;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #giohang>div {
+            display: grid;
+            height: 45px;
+            grid-template-columns: 350px 150px 60px auto;
+
+            align-items: center;
+            border-bottom: 1px solid darkorange;
+        }
+
+        #giohang>div>p {
+            margin: 0 10px;
+        }
+
+        #giohang>div>span {}
+
+        #giohang>div>input {
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        #giohang>div>em {
+            text-align: right;
+            font-style: normal;
+            padding-right: 10px;
+        }
+
+        #giohang h4 {
+            margin: 0;
+            text-align: center;
+            padding: 10px 0;
+            border-bottom: 1px solid darkorange;
+
+        }
+
+        #giohang input[type='text'] {
+            border: none;
+            background-color: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="giohang">
+        <h4>GIỎ HÀNG CỦA BẠN</h4>
+
+        <div>
+            <p>Samsung Galaxy Z Flip3</p>
+            <span>1500</span>
+            <input name="sl" value="3" type="number" onclick="arrThanhTien[0].value = arrSL[0].value*1500">
+            <input type="text" name="thanhtien" disabled>
+        </div>
+        <div>
+            <p>Xiaomi 11T 5G 128GB</p>
+            <span>600</span>
+            <input name="sl" value="3" type="number" onclick="arrThanhTien[1].value = arrSL[1].value*600">
+            <input type="text" name="thanhtien" disabled>
+        </div>
+        <div>
+            <p>Lenovo Ideapad 5 Pro</p>
+            <span>2000</span>
+            <input name="sl" value="3" type="number" onclick="arrThanhTien[2].value = arrSL[2].value*2000">
+            <input type="text" name="thanhtien" disabled value="arrThanhTien[2].value = arrSL[2].value*2000">
+        </div>
+    </div>
+
+    <script>
+        giohang = document.getElementById("giohang");
+        arrTien = document.getElementsByClassName("tien");
+        arrSL = document.getElementsByName("sl");
+        arrGia = document.getElementsByTagName("span");
+        arrThanhTien = document.getElementsByName('thanhtien');
+        arrThanhTien[0].value = arrSL[0].value * 1500;
+        arrThanhTien[1].value = arrSL[1].value * 600;
+        arrThanhTien[2].value = arrSL[2].value * 2000;
+    </script>
+</body>
+
+</html>
